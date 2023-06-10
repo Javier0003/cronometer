@@ -1,0 +1,58 @@
+body{
+    font-family: Montserrat;
+    background-color: #1b1b1b;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+.contador{
+    font-size: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+button{
+    color: white;
+}
+.botonStart{
+    border: 0px solid transparent;
+    background-color: rgb(79, 175, 42);
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+.botonMark{
+    border: 0px solid transparent;
+    background-color: rgb(34, 196, 161);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.botonRestart{
+    border: 0px solid transparent;
+    background-color: rgb(139, 32, 32);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.botonStop{
+    border: 0px solid transparent;
+    background-color: rgb(233, 178, 28);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.marcas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    width: 13%;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+li{
+    list-style-type: none;
+}

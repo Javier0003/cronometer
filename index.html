@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronometro</h1>
+        <div class="contador">
+            <p id="contador"></p>
+        </div>
+        <div class="botones">
+            <button class="botonStart" id="btn-start">Comenzar</button>
+            <button class="botonMark" id="btn-mark">Marca</button>
+            <button class="botonStop" id="btn-stop">Parar</button>
+            <button class="botonRestart" id="btn-restart">Reiniciar</button>
+        </div>
+        <div class="marcas">
+            <p>Vuelta</p>
+            <p>Tiempo</p>
+            <li id="vuelta-el" class="vuelta"></li>
+            <li id="tiempo-el" class="tiempo"></li>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
