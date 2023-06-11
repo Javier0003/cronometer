@@ -1,10 +1,10 @@
 let contador = document.getElementById("contador");
 let marcasEl = {
     vuelta: document.getElementById("vuelta-el"),
-    tiempo: document.getElementById("tiempo-el"),
-}
+    tiempo: document.getElementById("tiempo-el")
+};
 let contando = false;
-let intervalCount
+let intervalCount;
 let calculando = {
     milesimas: 0,
     segundos: 0,
@@ -25,7 +25,7 @@ let marcas = {
 let render ={
     vuelta: "",
     tiempo: ""
-}
+};
 const btn = {
     start: document.getElementById("btn-start"),
     restart: document.getElementById("btn-restart"),
@@ -57,12 +57,14 @@ btn.stop.addEventListener("click", function(){
 });
 
 btn.restart.addEventListener("click", function(){
-    calculando.minutos = "00"
+    calculando.minutos = "00";
     calculando.segundos = "00";
     calculando.milesimas = "00";
-    tiempo.minutos = "00"
+    calculando.horas = "00";
+    tiempo.minutos = "00";
     tiempo.segundos = "00";
     tiempo.milesimas = "00";
+    tiempo.horas = "00";
     marcasEl.vuelta.innerHTML = "";
     marcasEl.tiempo.innerHTML = "";
     marcas.vuelta = 0;
@@ -91,10 +93,10 @@ function contandoa() {
     else if(tiempo.minutos >= 60){
         calculando.horas += "+1";
         tiempo.horas = eval(calculando.horas);
-        calculando.minutos = "00"
+        calculando.minutos = "00";
         calculando.segundos = "00";
         calculando.milesimas = "00";
-        tiempo.minutos = "00"
+        tiempo.minutos = "00";
         tiempo.segundos = "00";
         tiempo.milesimas = "00";
     }
