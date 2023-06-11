@@ -111,5 +111,3 @@ function contandoa() {
     
     contador.textContent = `${tiempo.horas},${tiempo.minutos},${tiempo.segundos}.${tiempo.milesimas}`;
 }
-
-
