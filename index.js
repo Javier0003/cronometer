@@ -4,7 +4,7 @@ let marcasEl = {
     tiempo: document.getElementById("tiempo-el"),
 }
 let contando = false;
-var intervalCount
+let intervalCount
 let calculando = {
     milesimas: 0,
     segundos: 0,
